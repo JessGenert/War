@@ -1,38 +1,38 @@
-package practice;
-public class Card 
-{
+package WarOOP;
 
+public class Card
+{
+	
 	private Face face;
 	private Suit suit;
 	
-	public Card(Suit suit, Face face)
+	
+	public Card(Face face, Suit suit)
 	{
-		this.face = face;
 		this.suit = suit;
+		this.face = face;
+	}
+
+
+	public Face getFace()
+	{
+		return this.face;
 	}
 	
-	public String getFaceString() 
+	public int getFaceValue()
 	{
-		
-		return face.getFaceName();
-	}
-	
-	public int getFaceDigit() 
-	{
-		
 		return face.getFaceValue();
 	}
 
-	public String getSuit() 
+	public Suit getSuit()
 	{
-		return suit.getSuit();
+		return this.suit;
 	}
-	
 	
 	@Override
 	public String toString()
 	{
-		return  getFaceString() + " of " + getSuit();
+		return getFace() + " of " + getSuit();
 	}
 
 }

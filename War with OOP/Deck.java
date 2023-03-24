@@ -1,47 +1,41 @@
-package practice;
-import java.util.Arrays;
+package WarOOP;
+
+import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 public class Deck
 {
-	private static int currCard = 0;
-	private static Card[] deck;
-	private final int NUM_CARDS = 52;
-	private Suit[] suits = Suit.values();
-	private Face[] faces = Face.values();
+	private ArrayList<Card> pileOfCards = new ArrayList<>();
 	
-	public Deck()
+	/**
+	 * Initializing the deck with the suits and faces of each card
+	 */
+	public void initializeDeck()
 	{
-		deck = new Card[NUM_CARDS];
-		
-		for (int i = 0; i < deck.length; i++)
+		for(Suit suit : Suit.values())
 		{
-			deck[i] = new Card(suits[i / 13], faces[i % 13]);
+			for(Face face : Face.values())
+			{
+				pileOfCards.add(new Card(face, suit));
+			}
 		}
-		
 	}
 	
-	
-	
+	/**
+	 * A method for shuffling the deck after we initialize it
+	 */
 	public void shuffle()
 	{
-		currCard = 0;
-		
-		List<Card> cards = Arrays.asList(deck);
-		Collections.shuffle(cards);
-		cards.toArray(deck);
-		
+		Collections.shuffle(pileOfCards);
 	}
-
-	public static Card deal()
+	
+	/**
+	 * A method for transforming a deck into an array list of cards in order to be able to iterate through it
+	 * @return -  ArrayList of type Card
+	 */
+	public ArrayList<Card> toCardsList()
 	{
-		Card topCard = deck[currCard];
-		currCard++;
-		return topCard;
+		return pileOfCards;
 	}
-
 	
-	
-
 }

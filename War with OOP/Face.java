@@ -1,39 +1,34 @@
-package practice;
-public enum Face 
+package WarOOP;
+
+public enum Face
 {
+	TWO(2),
+	THREE(3),
+	FOUR(4),
+	FIVE(5),
+	SIX(6),
+	SEVEN(7),
+	EIGHT(8),
+	NINE(9),
+	TEN(10),
+	JACK(11),
+	QUEEN(12),
+	KING(13),
+	ACE(14);
 
-	ACE("A", 11),
-	TWO("2", 2), 
-	THREE("3", 3), 
-	FOUR("4", 4), 
-	FIVE("5", 5), 
-	SIX("6", 6),
-	SEVEN("7", 7),
-	EIGHT("8", 8),
-	NINE("9", 9),
-	TEN("10", 10),
-	JACK("Jack", 10),
-	QUEEN("Queen", 10),
-	KING("King", 10),
-	HIDDEN("", 0);
+	// The code blocks below allow you to access the int value of the card.
+	private int faceValue;
 	
-	private String number;
-	private int numberDigit;
 	
-	private Face(String number, int numberDigit)
+	private Face(int faceValue)
 	{
-		this.number = number;
-		this.numberDigit = numberDigit;
+		this.faceValue = faceValue;
 	}
-
-	public String getFaceName()
-	{
-		return this.number;
-	}
+	
 	
 	public int getFaceValue()
 	{
-		return this.numberDigit;
+		return this.faceValue;
 	}
 	
 }
