@@ -5,15 +5,15 @@ The war card game with OOP principles done in Java.
 
 Example Output:
 
-"FOUR of SPADES" vs "NINE of SPADES" - "Player Two Wins The Turn"
-"EIGHT of DIAMONDS" vs "FIVE of DIAMONDS" - "Player One Wins The Turn"
-"QUEEN of SPADES" vs "FOUR of HEARTS" - "Player One Wins The Turn"
-"FIVE of HEARTS" vs "FIVE of SPADES" - "Player Two Wins The Turn"
-"SIX of DIAMONDS" vs "SIX of SPADES" - "Player Two Wins The Turn"
-"THREE of SPADES" vs "QUEEN of CLUBS" - "Player Two Wins The Turn"
-"NINE of CLUBS" vs "FOUR of CLUBS" - "Player One Wins The Turn"
-"ACE of HEARTS" vs "TEN of DIAMONDS" - "Player One Wins The Turn"
-"JACK of HEARTS" vs "EIGHT of HEARTS" - "Player One Wins The Turn"
+"FOUR of SPADES" vs "NINE of SPADES" - "Player Two Wins The Turn" \n
+"EIGHT of DIAMONDS" vs "FIVE of DIAMONDS" - "Player One Wins The Turn"\n
+"QUEEN of SPADES" vs "FOUR of HEARTS" - "Player One Wins The Turn"\n
+"FIVE of HEARTS" vs "FIVE of SPADES" - "Player Two Wins The Turn"\n
+"SIX of DIAMONDS" vs "SIX of SPADES" - "Player Two Wins The Turn"\n
+"THREE of SPADES" vs "QUEEN of CLUBS" - "Player Two Wins The Turn"\n
+"NINE of CLUBS" vs "FOUR of CLUBS" - "Player One Wins The Turn"\n
+"ACE of HEARTS" vs "TEN of DIAMONDS" - "Player One Wins The Turn"\n
+"JACK of HEARTS" vs "EIGHT of HEARTS" - "Player One Wins The Turn"\n
 "NINE of HEARTS" vs "QUEEN of HEARTS" - "Player Two Wins The Turn"
 "NINE of DIAMONDS" vs "QUEEN of DIAMONDS" - "Player Two Wins The Turn"
 "THREE of CLUBS" vs "TWO of CLUBS" - "Player One Wins The Turn"
